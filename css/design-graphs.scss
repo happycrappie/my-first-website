@@ -1,0 +1,57 @@
+progress, progress[role] {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	   		appearance: none;
+	border: none;
+	background-size: auto;
+	height: 29px;
+	width: 100%;
+}
+
+progress::-webkit-progress-bar {
+	background: #e6e6e6;
+	border-radius: 5px;
+}
+
+.design-skills {
+	list-style: none;
+	margin: 0;
+	padding: 5px;
+}
+
+.design-skill {
+	margin-bottom: 10px;
+	position: relative;
+	h3 {
+		color: #fff;
+	    font-size: 1.14em;
+	    font-family: 'Open Sans', sans-serif;
+	    font-weight: 600;
+	    left: 5px;
+	    line-height: 0;
+	    position: absolute;
+	    top: 0;
+	}
+	::-webkit-progress-value {
+		-webkit-animation: bar-fill 2s;
+		width: 0px;
+	}
+}
+
+.d-skill::-webkit-progress-value {
+	background: #80b1e9;
+	border-radius: 5px;
+}
+
+.d-skill::-moz-progress-bar {
+	background: #80b1e9;
+	border-radius: 5px;
+}
+
+@-webkit-keyframes bar-fill {
+	0% {width: 0;}
+}
+
+@keyframes bar-fill {
+	0% {width: 0;}
+}

@@ -1,0 +1,165 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:700);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #ecf0f1;
+  color: #444;
+  font-family: 'Lato', Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}
+.set-size {
+  font-size: 7em;
+}
+.skills-container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.skill-wrapper {
+  height: 1em;
+  width: 1em;
+  float: left;
+  margin: 15px;
+  position: relative;
+}
+.skill-wrapper:nth-child(4n+1) {
+  clear: both;
+}
+.skill-wrapper .skill {
+  height: 100%;
+  width: 100%;
+  clip: rect(0, 1em, 1em, 0.5em);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.skill-wrapper .skill .half-circle {
+  height: 100%;
+  width: 100%;
+  border: 0.05em solid #3498db;
+  border-radius: 50%;
+  clip: rect(0, 0.5em, 1em, 0);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.skill-wrapper .label {
+  background: #34495e;
+  border-radius: 50%;
+  bottom: 0.4em;
+  color: #ecf0f1;
+  cursor: default;
+  display: block;
+  font-size: 0.25em;
+  left: 0.4em;
+  line-height: 2.6em;
+  position: absolute;
+  right: 0.4em;
+  text-align: center;
+  top: 0.4em;
+}
+.skill-wrapper .label .smaller {
+  color: #bdc3c7;
+  font-size: .45em;
+  padding-bottom: 20px;
+  vertical-align: super;
+}
+.skill-wrapper .shadow {
+  height: 100%;
+  width: 100%;
+  border: 0.05em solid #e6e6e6;
+  border-radius: 50%;
+}
+.skill-wrapper.style-2 .label {
+  background: none;
+  color: #7f8c8d;
+}
+.skill-wrapper.style-2 .label .smaller {
+  color: #bdc3c7;
+}
+.skill-wrapper.progress-85 .skill {
+  clip: rect(auto, auto, auto, auto);
+}
+.skill-wrapper.progress-85 .skill .right-side {
+  transform: rotate(180deg);
+}
+.skill-wrapper.progress-85 .skill .half-circle {
+  border-color: #b8e986;
+}
+.skill-wrapper.progress-85 .skill .left-side {
+  transform: rotate(306deg);
+}
+.skill-wrapper.progress-90 .skill {
+  clip: rect(auto, auto, auto, auto);
+}
+.skill-wrapper.progress-90 .skill .right-side {
+  transform: rotate(180deg);
+}
+.skill-wrapper.progress-90 .skill .half-circle {
+  border-color: #b8e986;
+}
+.skill-wrapper.progress-90 .skill .left-side {
+  transform: rotate(324deg);
+}
+.skill-wrapper.progress-63 .skill {
+  clip: rect(auto, auto, auto, auto);
+}
+.skill-wrapper.progress-63 .skill .right-side {
+  transform: rotate(180deg);
+}
+.skill-wrapper.progress-63 .skill .half-circle {
+  border-color: #b8e986;
+}
+.skill-wrapper.progress-63 .skill .left-side {
+  transform: rotate(226.8deg);
+}
+.skill-wrapper.progress-30 .skill .right-side {
+  display: none;
+}
+.skill-wrapper.progress-30 .skill .half-circle {
+  border-color: #b8e986;
+}
+.skill-wrapper.progress-30 .skill .left-side {
+  transform: rotate(108deg);
+}
+.skill-wrapper--solid {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.skill-wrapper--solid:before {
+  border-radius: 0 100% 100% 0%;
+  content: '';
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+}
+.skill-wrapper--solid .label {
+  background: transparent;
+}
+.skill-wrapper--solid.progress-65 {
+  background: linear-gradient(to right, #e67e22 50%, #34495e 50%);
+}
+.skill-wrapper--solid.progress-65:before {
+  background: #e67e22;
+  transform: rotate(126deg);
+}
+.skill-wrapper--solid.progress-25 {
+  background: linear-gradient(to right, #9b59b6 50%, #34495e 50%);
+}
+.skill-wrapper--solid.progress-25:before {
+  background: #34495e;
+  transform: rotate(-270deg);
+}
+.skill-wrapper--solid.progress-88 {
+  background: linear-gradient(to right, #3498db 50%, #34495e 50%);
+}
+.skill-wrapper--solid.progress-88:before {
+  background: #3498db;
+  transform: rotate(43.2deg);
+}
